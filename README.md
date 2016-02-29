@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # therap-assigns
 All the Therap Training Assignments will be in here.
 
@@ -42,8 +41,3 @@ folder: assignment_4/
 * script file(s): make_dirs, grab_ratings
 * output file(s): Movie_Ratings.html
 * input file(s): movie_list
-
-
-=======
-# therap-assigns
->>>>>>> 64662f89d860602ceb4134a6c569d848cc6d3de9
