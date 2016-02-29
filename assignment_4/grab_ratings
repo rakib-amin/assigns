@@ -1,0 +1,57 @@
+#!/bin/bash
+
+movie_count=`ls movie_dirs | wc -l`;
+i=$movie_count;
+echo '<html>
+<head>
+	<title>Movie Ratings</title>
+</head>
+<body>
+<style>
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+</style>
+';
+echo '<h2>Movie Ratings</h2>
+<center>
+<table>
+<tr>
+	<th>Movie Name</th>
+	<th>Movie Dir</th>
+	<th>IMDB Rating</th>		
+	<th>IMDB Page</th>
+</tr>
+';
+while [ $i -gt 0 ]; do
+	movie=`ls movie_dirs | tail -$i | head -1`
+	echo "<td>$movie</td>";
+	echo "<td><a href=\"movie_dirs/$movie/\">Download</a></td>"; 
+	wget -q --user-agent=Mozilla/5.0 -O temp "http://www.imdb.com/find?q=$movie&s=tt&ttype=ft&ref_=fn_ft"
+	rel_url=`grep -Po "<td class=\"result_text\"> <a href=\".*?${movie:0:1}" temp | head -1` 
+	rel_url=${rel_url%%/?ref*};
+	rel_url=${rel_url:35};
+	url="http://www.imdb.com/$rel_url";
+	rating=`wget -qO - $url | grep -Po '<span itemprop="ratingValue">.*?</span>'`;
+	rating=${rating:29};
+	rating=${rating%'</span>'};
+	echo "<td><b>$rating</b></td>";
+	echo "<td><a href='http://www.imdb.com/$rel_url'>See in IMdb</a></td>";
+	i=`expr $i - 1`
+	# echo $i
+	echo '</tr>'
+done
+echo '</table>';
+echo '</center>
+</body>
+</html>';
+rm temp;
+exit 0;

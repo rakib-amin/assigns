@@ -1,0 +1,4 @@
+*.exe
+*.commands
+*.sh~
+.gitignore~

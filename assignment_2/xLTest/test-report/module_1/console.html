@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<body>
+File Created: 
+2015-12-03 14:35:40 +0600
+<br />
+<strong><emph>Config</emph></strong>
+<br />
+{:data_source_type=>"file_system",
+ :source_file_name=>"spreadsheet1.ods",
+ :start_from_line_no=>"2"}
+<br />
+<strong><emph>Expected Data</emph></strong>
+<br />
+Column A: string,true,[a-zA-Z]
+<br />
+Column B: date,true,dd-mm-yyyy
+<br />
+Column C: number,false,[0-9]
+<br />
+<strong><emph>Spreadsheet</emph></strong>
+<br />
+Row: 2 Column: A
+Value: <u>John</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 3 Column: A
+Value: <u>John123</u>
+<strong style='color:red'>
+Regex Mismatch
+</strong>
+
+<br />
+Row: 4 Column: A
+Value: <u>John</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 5 Column: A
+Value: <u>1 J ohn</u>
+<strong style='color:red'>
+Regex Mismatch
+</strong>
+
+<br />
+Row: 6 Column: A
+Value: <u></u>
+<strong style='color:red'>
+Data Absent: Was a Required Cell
+</strong>
+
+<br />
+Row: 7 Column: A
+Value: <u>John</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 8 Column: A
+Value: <u>John</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+<br />
+Row: 2 Column: B
+Value: <u>23-12-1990</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 3 Column: B
+Value: <u>23-12-1990</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 4 Column: B
+Value: <u>John</u>
+<strong style='color:red'>
+Not a Valid Date. Ruby has raised ArgumentError
+</strong>
+
+<br />
+Row: 5 Column: B
+Value: <u>23-12-1990</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 6 Column: B
+Value: <u></u>
+<strong style='color:red'>
+Data Absent: Was a Required Cell
+</strong>
+
+<br />
+Row: 7 Column: B
+Value: <u>23-12-1990</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 8 Column: B
+Value: <u>23-12-1990</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+<br />
+Row: 2 Column: C
+Value: <u>012</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 3 Column: C
+Value: <u>01556397812</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 4 Column: C
+Value: <u>12</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 5 Column: C
+Value: <u>22</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 6 Column: C
+Value: <u>33</u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 7 Column: C
+Value: <u></u>
+<strong style='color:red'>
+</strong>
+
+<br />
+Row: 8 Column: C
+Value: <u>121s</u>
+<strong style='color:red'>
+Not a Number
+</strong>
+
+<br />
+<br />
+</body>
+</html>

@@ -1,0 +1,30 @@
+24 Hour Report for /ma/isp/singleForm
+---------------------------------------------------------------------------------------------
+TH HOUR---# USER---# GET---# POST---TOTAL_TIME_GET(ms)---TOTAL_TIME_POST(ms)---TOTAL_TIME(ms)
+---------------------------------------------------------------------------------------------
+1TH HOUR---1182 users---594 GET REQs---588 POST REQs---88907ms in GET---41363ms in POST---130270ms in Total
+2TH HOUR---761 users---386 GET REQs---375 POST REQs---56235ms in GET---26113ms in POST---82348ms in Total
+3TH HOUR---601 users---296 GET REQs---305 POST REQs---40845ms in GET---21935ms in POST---62780ms in Total
+4TH HOUR---338 users---174 GET REQs---164 POST REQs---25842ms in GET---8325ms in POST---34167ms in Total
+5TH HOUR---302 users---160 GET REQs---142 POST REQs---22636ms in GET---11481ms in POST---34117ms in Total
+6TH HOUR---512 users---258 GET REQs---254 POST REQs---36139ms in GET---18333ms in POST---54472ms in Total
+7TH HOUR---969 users---504 GET REQs---465 POST REQs---81182ms in GET---27553ms in POST---108735ms in Total
+8TH HOUR---1787 users---940 GET REQs---847 POST REQs---188867ms in GET---57629ms in POST---246496ms in Total
+9TH HOUR---2550 users---1308 GET REQs---1242 POST REQs---322112ms in GET---92247ms in POST---414359ms in Total
+10TH HOUR---2774 users---1497 GET REQs---1277 POST REQs---382323ms in GET---100386ms in POST---482709ms in Total
+11TH HOUR---2152 users---1196 GET REQs---956 POST REQs---304031ms in GET---87532ms in POST---391563ms in Total
+12TH HOUR---2521 users---1408 GET REQs---1113 POST REQs---330537ms in GET---96873ms in POST---427410ms in Total
+13TH HOUR---2602 users---1372 GET REQs---1230 POST REQs---586070ms in GET---86041ms in POST---672111ms in Total
+14TH HOUR---3794 users---2074 GET REQs---1720 POST REQs---674166ms in GET---131756ms in POST---805922ms in Total
+15TH HOUR---4843 users---2586 GET REQs---2257 POST REQs---716203ms in GET---195022ms in POST---911225ms in Total
+16TH HOUR---3932 users---2062 GET REQs---1870 POST REQs---481842ms in GET---170573ms in POST---652415ms in Total
+17TH HOUR---3521 users---1832 GET REQs---1689 POST REQs---406075ms in GET---148557ms in POST---554632ms in Total
+18TH HOUR---3337 users---1781 GET REQs---1556 POST REQs---409400ms in GET---125456ms in POST---534856ms in Total
+19TH HOUR---2853 users---1503 GET REQs---1350 POST REQs---454009ms in GET---99397ms in POST---553406ms in Total
+20TH HOUR---2258 users---1163 GET REQs---1095 POST REQs---384357ms in GET---80182ms in POST---464539ms in Total
+21TH HOUR---3175 users---1681 GET REQs---1494 POST REQs---614443ms in GET---110972ms in POST---725415ms in Total
+22TH HOUR---4063 users---2122 GET REQs---1941 POST REQs---654606ms in GET---138917ms in POST---793523ms in Total
+23TH HOUR---3812 users---1968 GET REQs---1844 POST REQs---508235ms in GET---126976ms in POST---635211ms in Total
+24TH HOUR---2432 users---1253 GET REQs---1179 POST REQs---262136ms in GET---113948ms in POST---376084ms in Total
+User [samanthaparks@LOI-OR] spent 29781 ms using GET method
+User [samanthaparks@LOI-OR] spent 4856 ms using POST method

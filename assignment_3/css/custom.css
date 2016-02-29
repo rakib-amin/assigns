@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+
+html{
+  font-family: "Ubuntu Mono"; 
+}
+
+#number_area{
+  font-family: "Ubuntu Mono", serif; 
+  border: 1px black solid;
+  border-radius: 10px; 
+  outline: none;
+  padding: 5px;
+  color: transparent; 
+  /*direction:RTL; */
+  text-shadow:
+   -1px -1px 0 #333333,  
+    1px -1px 0 #333333,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
+  font-size: 50px; 
+}
+
+#number_area:focus{
+  border: 1px black dashed;
+}
+.fa {
+	color: transparent;
+}
+
+button {
+  font-family: "Ubuntu Mono", serif;
+  background: transparent;
+  border: 1px #333333 solid;
+  border-radius: 20px;
+  outline: none;
+}
+
+button:hover{
+  border: 1px #aaa dashed;
+  color: #aaa;
+}
+
+button:active{
+  border: 1px #ea5e57 dashed;
+  color: #ea5e57;
+}
+
+#zero{
+	width: 200px;
+}
+
+#equal{
+  width: 200px;
+  background: #333333;
+}
+
+#equal:hover{
+  background: #aaa;
+}
+
+#equal:active{
+  background: #ea5e57;
+}
+
+.container{
+	padding: 0;
+}
+
+.row{
+	padding: 2px;
+}
+
+/* for jQuery Effect */
+.button-press{
+  border: 1px #ea5e57 dashed;
+  color: #ea5e57;
+}
+
+.equal-button-press{
+  background: #ea5e57;
+}
+

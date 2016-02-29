@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Calculas</title>
+<meta name="description" content="Page description goes here">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+
+</head>
+<body>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<center>
+		<div class="container">
+				<div class="row"><input id="number_area" type="text" name="textbox" onkeypress="return extraDecimal(event)" onkeydown="keyIsDown(event)" onkeyup="keyIsUp(event)"/></div>
+				<br>
+				<div class="row">
+					<button id="memclr"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">MC</strong></span></button>
+					<button id="memret"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">MR</strong></span></button>
+					<button id="memset"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">MS</strong></span></button>
+					<button id="memadd"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">M+</strong></span></button>
+					<button id="memsub"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">M-</strong></span></button>	
+				</div>
+				<div class="row">
+					<button id="backspace"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">&larr;</strong></span></button>
+					<button id="errorcancel"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">CE</strong></span></button>
+					<button id="allcancel"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">C</strong></span></button>
+					<button id="divide"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">/</strong></span></button>
+					<button id="sqroot"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">&radic;</strong></span></button>
+				</div>
+				<div class="row">
+					<button id="seven"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">7</strong></span></button>
+					<button id="eight"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">8</strong></span></button>
+					<button id="nine"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">9</strong></span></button>
+					<button id="multiply"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">*</strong></span></button>
+					<button id="plusminus"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">&plusmn;</strong></span></button>
+				</div>
+				<div class="row">
+					<button id="four"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">4</strong></span></button>
+					<button id="five"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">5</strong></span></button>
+					<button id="six"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">6</strong></span></button>
+					<button id="subtract"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">-</strong></span></button>
+					<button id="inverse"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">1/x</strong></span></button>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<button id="one"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">1</strong></span></button>
+							<button id="two"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">2</strong></span></button>
+							<button id="three"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">3</strong></span></button>
+							<button id="add"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">+</strong></span></button>
+							
+							<button id="percent"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">%</strong></span></button>
+						</div>
+						<div class="row">
+							<button id="zero" style="width: 200px;"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">0</strong></span></button>
+							<button id="decimal"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x ">.</strong></span></button>	
+							<button id="equal"><span class="fa-stack fa-3x"><i class="fa fa-square fa-stack-2x"></i><strong class="fa-stack-1x fa-inverse">=</strong></span></button>
+						</div>
+					</div>	
+				</div>
+			</div>
+			</center>				
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
