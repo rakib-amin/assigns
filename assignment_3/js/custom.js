@@ -4,85 +4,84 @@ var globalDecimalCount = 0;
 var mem = 0;
 var equalIsPressed = false;
 
-
 function allClear() {
-	return (document.getElementById('number_area').value == null)||(document.getElementById('number_area').value == "") 
+	return document.getElementById('number_area').value.trim() == null;
 }
 
 // key mapping
 function keyIsDown (evt) {
 	// console.log("Pressed: " + evt.keyCode);
 	switch(evt.keyCode) {
-    case 48:
-    case 96:
-        $("#zero").addClass("button-press");
-        break;
-    case 46:
-    case 110:
-        $("#decimal").addClass("button-press");
-        break;
-    case 13:
-    case 187:
-    	if (evt.shiftKey) $("#add").addClass("button-press");
-    	else { $("#equal").css("background", "#ea5e57"); equalIsPressed = true; }
-        break;
-    case 49:
-    case 97:
-        $("#one").addClass("button-press");
-        break;
-    case 50:
-    case 98:
-        $("#two").addClass("button-press");
-        break;
-    case 51:
-    case 99:
-        $("#three").addClass("button-press");
-        break;
-    case 52:
-    case 100:
-        $("#four").addClass("button-press");
-        break;
-    case 53:
-    case 101:
-    	$("#five").addClass("button-press");
-        break;
-    case 54:
-    case 102:
-        $("#six").addClass("button-press");
-        break;
-    case 55:
-    case 103:
-        $("#seven").addClass("button-press");
-        break;
-    case 56:
-    case 104:
-    	if (evt.shiftKey) $("#multiply").addClass("button-press");
-        else $("#eight").addClass("button-press");
-        break;
-    case 57:
-    case 105:
-        $("#nine").addClass("button-press");
-        break;
-    case 107:
-        $("#add").addClass("button-press");
-        break;
-    case 189:
-    case 109:
-        $("#subtract").addClass("button-press");
-        break;
-    case 106:
-        $("#multiply").addClass("button-press");
-        break;
-    case 191:
-    case 111:
-        $("#divide").addClass("button-press");
-        break;
-    case 8:
-        $("#backspace").addClass("button-press");
-        break;
-    
-    default:
-        break;
+        case 48:
+        case 96:
+            $("#zero").addClass("button-press");
+            break;
+        case 46:
+        case 110:
+            $("#decimal").addClass("button-press");
+            break;
+        case 13:
+        case 187:
+        	if (evt.shiftKey) $("#add").addClass("button-press");
+        	else { $("#equal").css("background", "#ea5e57"); equalIsPressed = true; }
+            break;
+        case 49:
+        case 97:
+            $("#one").addClass("button-press");
+            break;
+        case 50:
+        case 98:
+            $("#two").addClass("button-press");
+            break;
+        case 51:
+        case 99:
+            $("#three").addClass("button-press");
+            break;
+        case 52:
+        case 100:
+            $("#four").addClass("button-press");
+            break;
+        case 53:
+        case 101:
+        	$("#five").addClass("button-press");
+            break;
+        case 54:
+        case 102:
+            $("#six").addClass("button-press");
+            break;
+        case 55:
+        case 103:
+            $("#seven").addClass("button-press");
+            break;
+        case 56:
+        case 104:
+        	if (evt.shiftKey) $("#multiply").addClass("button-press");
+            else $("#eight").addClass("button-press");
+            break;
+        case 57:
+        case 105:
+            $("#nine").addClass("button-press");
+            break;
+        case 107:
+            $("#add").addClass("button-press");
+            break;
+        case 189:
+        case 109:
+            $("#subtract").addClass("button-press");
+            break;
+        case 106:
+            $("#multiply").addClass("button-press");
+            break;
+        case 191:
+        case 111:
+            $("#divide").addClass("button-press");
+            break;
+        case 8:
+            $("#backspace").addClass("button-press");
+            break;
+        
+        default:
+            break;
 	}
 }
 
@@ -197,7 +196,7 @@ function keyIsUp (evt) {
         break;
     case 8:
         $("#backspace").removeClass("button-press");
-        if ($('#number_area').val()==""||$('#number_area').val()==null)globalDecimalCount=0;
+        if ($('#number_area').val().trim()==null)globalDecimalCount=0;
         break;
     default:
         break;
@@ -221,7 +220,7 @@ $(function() {
 	globalDecimalCount=0;
 	$("#number_area").keypress(function() {
 		if ($("#number_area").val().indexOf('.')==-1) globalDecimalCount=0;
-	  	console.log( equalIsPressed );
+	  	// console.log( equalIsPressed );
 	});
 
 	$.fn.restrictInputs = function(){
